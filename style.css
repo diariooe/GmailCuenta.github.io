@@ -1,22 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Google Login Form</title>
-</head>
-<body>
-    <div class="box">
-        <div id="logo" class="google-logo" title="Google">
-            <div class="rr0DNb" jsname="l4eHX">
-                <svg viewBox="0 0 75 24" width="75" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="l5Lhkf">
-                    <!-- SVG code here -->
-                </svg>
-            </div>
-        </div>
-        <h2>Sign in</h2>
-        <p>Use a Google account</p>
-        <form>
-            <div class="inputBox">
-                <input type="email" name="email" required="" onkeyup="
+Lamento la confusión. Después de analizar tu página, encontré que el problema no está en el código HTML ni en la referencia del archivo CSS.
+
+El problema principal es que el código CSS existente en el archivo "style.css" no aborda los estilos necesarios para corregir el tamaño y el desbordamiento del texto en el cuadro de inicio de sesión.
+
+Aquí tienes un ejemplo de cómo podrías actualizar el archivo "style.css" para corregir el problema:
+
+```css
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.box {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 14px;
+  color: #777;
+  margin: 0 0 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+ 
